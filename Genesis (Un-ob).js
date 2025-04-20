@@ -39,26 +39,26 @@ genesis.eject = function(){
     console.warn('EJECTING...');
     clearInterval(genesis.processID);
     console.warn('Clearing Interval...');
-    genesis.genesis.lookupVariableByNameAndType('connected?', '').value = 'disconnected';
+    genesis.genesis.lookupVariableByNameAndType('@GENESIS:connected?', '').value = 'disconnected';
     console.error('Confirmed Disconnection, wiping Genesis internals . . .');
     console.log('Goodbye!');
     alert(`Process ${genesis.processID} has been ejected.`);
     genesis = {'IDENTIFIER': genesis.processID};
 }
 
-genesis.oldOpcode = genesis.genesis.lookupVariableByNameAndType('opcode', '').value
+genesis.oldOpcode = genesis.genesis.lookupVariableByNameAndType('@GENESIS:opcode', '').value
 genesis.start = function(){
   genesis.processID = (setInterval(function() {
-    genesis.genesis.lookupVariableByNameAndType('connected?', '').value = 'connected';
-    if (genesis.genesis.lookupVariableByNameAndType('opcode', '').value !== genesis.oldOpcode) {
-      var cmd = String(genesis.genesis.lookupVariableByNameAndType('return', '').value)
+    genesis.genesis.lookupVariableByNameAndType('@GENESIS:connected?', '').value = 'connected';
+    if (genesis.genesis.lookupVariableByNameAndType('@GENESIS:opcode', '').value !== genesis.oldOpcode) {
+      var cmd = String(genesis.genesis.lookupVariableByNameAndType('@GENESIS:return', '').value)
       if (cmd.includes("method: 'POST'") || cmd.includes("method: 'POST'") || cmd.includes("href") || cmd.includes("open(") || cmd.includes("document.") || cmd.includes("getElementById('app')")) {
         // filter detection, block immediately.
-        genesis.genesis.lookupVariableByNameAndType('return', '').value = 'Command detected as unsafe, '+genesis.filterText[Math.floor(Math.random() * genesis.filterText.length)];
+        genesis.genesis.lookupVariableByNameAndType('@GENESIS:return', '').value = 'Command detected as unsafe, '+genesis.filterText[Math.floor(Math.random() * genesis.filterText.length)];
       } else {
-        genesis.genesis.lookupVariableByNameAndType('return', '').value = genesis.eval(cmd)
-        genesis.genesis.lookupVariableByNameAndType('oldOpcode', '').value = genesis.genesis.lookupVariableByNameAndType('opcode', '').value;
-        genesis.oldOpcode = genesis.genesis.lookupVariableByNameAndType('opcode', '').value;
+        genesis.genesis.lookupVariableByNameAndType('@GENESIS:return', '').value = genesis.eval(cmd)
+        genesis.genesis.lookupVariableByNameAndType('@GENESIS:oldOpcode', '').value = genesis.genesis.lookupVariableByNameAndType('@GENESIS:opcode', '').value;
+        genesis.oldOpcode = genesis.genesis.lookupVariableByNameAndType('@GENESIS:opcode', '').value;
       }
     };
   },33))
