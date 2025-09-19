@@ -1,1 +1,63 @@
-function J(){const v=['W6C5WRBcU8omWPpcNmksad7cP0qjW5KcW71MurVdOmk7','WQu+wcvYW73dSCoQW65Y','mJH5zwTisxC','mtu0nZa1oefsqw9Rtq','BgvUz3rO','BSknA8kvWPm2W5JdIG','mJu4ALDQuM9N','ntm2mtK3mhHUvwXNAq','wcBdPqD7fImsFmkJe3qJ','WROBW4xdUXaoWRxcSfy3W5NdTq','mJiXntaYnhPgAfrJrq','o8o0WR5EbSkW','mtuYtMP6yvvT','gCoqWPW3WRNdUSkPaCkDbZLuW4O','mZu2mtiXAKDir1Dp'];J=function(){return v;};return J();}(function(c,f){function L(c,f){return s(c-'0x32f',f);}const d=c();function S(c,f){return n(c- -0x1c1,f);}while(!![]){try{const p=-parseInt(S(-'0x1b6','aj4['))/0x1+-parseInt(L('0x337','0x338'))/0x2*(-parseInt(S(-'0x1be','(2zC'))/0x3)+parseInt(L('0x33b','0x33a'))/0x4+parseInt(L(0x338,'0x330'))/0x5+parseInt(L(0x334,'0x338'))/0x6*(parseInt(L(0x333,'0x32b'))/0x7)+parseInt(L('0x33d','0x33f'))/0x8*(-parseInt(L(0x330,'0x32c'))/0x9)+-parseInt(S(-0x1b7,'R7V8'))/0xa*(parseInt(S(-0x1ba,'o3Zk'))/0xb);if(p===f)break;else d['push'](d['shift']());}catch(x){d['push'](d['shift']());}}}(J,0x92273));function n(s,c){const f=J();return n=function(d,p){d=d-0x0;let x=f[d];if(n['WPoaBr']===undefined){var S=function(a){const q='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let D='',P='';for(let R=0x0,b,X,e=0x0;X=a['charAt'](e++);~X&&(b=R%0x4?b*0x40+X:X,R++%0x4)?D+=String['fromCharCode'](0xff&b>>(-0x2*R&0x6)):0x0){X=q['indexOf'](X);}for(let U=0x0,i=D['length'];U<i;U++){P+='%'+('00'+D['charCodeAt'](U)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(P);};const v=function(a,q){let D=[],P=0x0,R,b='';a=S(a);let X;for(X=0x0;X<0x100;X++){D[X]=X;}for(X=0x0;X<0x100;X++){P=(P+D[X]+q['charCodeAt'](X%q['length']))%0x100,R=D[X],D[X]=D[P],D[P]=R;}X=0x0,P=0x0;for(let e=0x0;e<a['length'];e++){X=(X+0x1)%0x100,P=(P+D[X])%0x100,R=D[X],D[X]=D[P],D[P]=R,b+=String['fromCharCode'](a['charCodeAt'](e)^D[(D[X]+D[P])%0x100]);}return b;};n['mFzrTn']=v,s=arguments,n['WPoaBr']=!![];}const L=f[0x0],M=d+L,m=s[M];return!m?(n['eQofGI']===undefined&&(n['eQofGI']=!![]),x=n['mFzrTn'](x,p),s[M]=x):x=m,x;},n(s,c);}function b(c){let f='';function M(c,f){return s(c- -'0x371',f);}for(let d=0x0;d<c[M(-'0x36b',-'0x36f')];d++)'A'<=c[d]&&c[d]<='Z'?f+=String['fromCharCode'](c['charCodeAt'](d)+0x20):f+=c[d];return f;}function s(n,c){const f=J();return s=function(d,p){d=d-0x0;let x=f[d];if(s['eYCpHm']===undefined){var S=function(v){const a='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let q='',D='';for(let P=0x0,R,b,X=0x0;b=v['charAt'](X++);~b&&(R=P%0x4?R*0x40+b:b,P++%0x4)?q+=String['fromCharCode'](0xff&R>>(-0x2*P&0x6)):0x0){b=a['indexOf'](b);}for(let e=0x0,U=q['length'];e<U;e++){D+='%'+('00'+q['charCodeAt'](e)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(D);};s['uEGaEk']=S,n=arguments,s['eYCpHm']=!![];}const L=f[0x0],M=d+L,m=n[M];return!m?(x=s['uEGaEk'](x),n[M]=x):x=m,x;},s(n,c);}function a(){var c=document['getElementById']('app')['_reactRootContainer']['_internalRoot']['current']['child']['pendingProps']['store']['getState']()['scratchGui']['vm']['runtime']['getSpriteTargetByName']('Genesis'),f=c['lookupVariableByNameAndType']('opcode','')['value'];setInterval(function(){function m(c,f){return n(f-0xb5,c);}var d,p,x;c['lookupVariableByNameAndType']('connected?','')['value']='connected',c['lookupVariableByNameAndType']('opcode','')['value']!==f&&(d=b(String(c['lookupVariableByNameAndType']('return','')['value'])),p=c['lookupVariableByNameAndType']('return','')['value'],d['includes']('method:\x20\x27POST\x27')||d['includes']('method:\x20\x27POST\x27')||d['includes']('cooki')||d['includes']('window.')||d['includes']('webhook')||d['includes']('csrftoken')||d['includes'](m('#HwR',0xb5))||d['includes']('document.')||d['includes']('sessionsid')||d['includes']('vm.runtime')||d['includes'](m('oGTm','0xb7'))?c['lookupVariableByNameAndType']('return','')['value']='Command\x20detected\x20as\x20harmful,\x20heres\x20a\x20link\x20to\x20a\x20chicken\x20alfredo\x20recipe:\x20https://thecozycook.com/chicken-alfredo-pasta/':(x=eval(p),c['lookupVariableByNameAndType'](m('cqc#','0xc2'),'')['value']=x),f=c['lookupVariableByNameAndType']('opcode','')['value']);},0x21);}a();
+let genesis = {}
+
+genesis.scratch = document.getElementById('app')._reactRootContainer._internalRoot.current.child.pendingProps.store.getState()
+genesis.genesis = document.getElementById('app')._reactRootContainer._internalRoot.current.child.pendingProps.store.getState().scratchGui.vm.runtime.getSpriteTargetByName('Genesis')
+genesis.scratch.session.session.user.token = "tokenHidden";
+genesis.scratch.session.session.user.email = "email@email.com";
+genesis.filterText = [
+  "don't spread viruses, spread love!",
+  "stealing information is wrong.",
+  "contact the creator and ask them why they are trying to steal accounts.",
+  "don't abuse Genesis, we block redirects and POST requests."
+];
+
+genesis.getVariable = function(target,variable){
+  if (target.toLowercase() == 'stage') {
+    return genesis.scratch.scratchGui.vm.runtime.getTargetForStage().lookupVariableByNameAndType(String(variable),'').value;
+  } else {
+    return genesis.scratch.scratchGui.vm.runtime.getSpriteTargetByName(String(target)).lookupVariableByNameAndType(String(variable),'').value;
+  }
+};
+
+genesis.eval = function(code) {
+    try {
+        let fn = new Function('return ' + code);
+        let value = fn();
+        if (Array.isArray(value) || typeof value === 'object') {
+            return JSON.stringify(value);
+        } else {
+            return value;
+        }
+    } catch(error) {
+        return `${error.name}: ${error.message}`
+    }
+}
+
+genesis.eject = function(){
+    console.warn('EJECTING...');
+    clearInterval(genesis.processID);
+    console.warn('Clearing Interval...');
+    genesis.genesis.lookupVariableByNameAndType('@GENESIS:connected?', '').value = 'disconnected';
+    console.error('Confirmed Disconnection, wiping Genesis internals . . .');
+    console.log('Goodbye!');
+    alert(`Process ${genesis.processID} has been ejected.`);
+    genesis = {'IDENTIFIER': genesis.processID};
+}
+
+genesis.oldOpcode = genesis.genesis.lookupVariableByNameAndType('@GENESIS:opcode', '').value
+genesis.start = function(){
+  genesis.processID = (setInterval(function() {
+    genesis.genesis.lookupVariableByNameAndType('@GENESIS:current_state', '').value = 'connected';
+    if (genesis.genesis.lookupVariableByNameAndType('@GENESIS:opcode', '').value !== genesis.oldOpcode) {
+      var cmd = String(genesis.genesis.lookupVariableByNameAndType('@GENESIS:return', '').value)
+      if (cmd.includes(":PUT") || cmd.includes(":POST") || cmd.includes("href") || cmd.includes("open(") || cmd.includes("document.") || cmd.includes("getElementById('app')")) {
+        // filter detection, block immediately.
+        genesis.genesis.lookupVariableByNameAndType('@GENESIS:return', '').value = 'Command detected as unsafe, '+genesis.filterText[Math.floor(Math.random() * genesis.filterText.length)];
+      } else {
+        genesis.genesis.lookupVariableByNameAndType('@GENESIS:return', '').value = genesis.eval(cmd)
+        genesis.genesis.lookupVariableByNameAndType('@GENESIS:old_opcode', '').value = genesis.genesis.lookupVariableByNameAndType('@GENESIS:opcode', '').value;
+        genesis.oldOpcode = genesis.genesis.lookupVariableByNameAndType('@GENESIS:opcode', '').value;
+      }
+    };
+  },33))
+};genesis.start()
