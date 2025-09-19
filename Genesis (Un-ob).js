@@ -1,14 +1,12 @@
-var genesis = {}
+let genesis = {}
+
 genesis.scratch = document.getElementById('app')._reactRootContainer._internalRoot.current.child.pendingProps.store.getState()
 genesis.genesis = document.getElementById('app')._reactRootContainer._internalRoot.current.child.pendingProps.store.getState().scratchGui.vm.runtime.getSpriteTargetByName('Genesis')
 genesis.scratch.session.session.user.token = "tokenHidden";
 genesis.scratch.session.session.user.email = "email@email.com";
 genesis.filterText = [
-  'blowing up computer in t-minus 3 seconds.',
   "don't spread viruses, spread love!",
   "stealing information is wrong.",
-  "Javascript is a very diverse language, try using some other code!",
-  "using Genesis to steal accounts is wrong, the creators project has been logged to the Genesis Database.",
   "contact the creator and ask them why they are trying to steal accounts.",
   "don't abuse Genesis, we block webhooks and sending data."
 ];
@@ -49,15 +47,15 @@ genesis.eject = function(){
 genesis.oldOpcode = genesis.genesis.lookupVariableByNameAndType('@GENESIS:opcode', '').value
 genesis.start = function(){
   genesis.processID = (setInterval(function() {
-    genesis.genesis.lookupVariableByNameAndType('@GENESIS:connected?', '').value = 'connected';
+    genesis.genesis.lookupVariableByNameAndType('@GENESIS:current_state', '').value = 'connected';
     if (genesis.genesis.lookupVariableByNameAndType('@GENESIS:opcode', '').value !== genesis.oldOpcode) {
       var cmd = String(genesis.genesis.lookupVariableByNameAndType('@GENESIS:return', '').value)
-      if (cmd.includes("method: 'POST'") || cmd.includes("method: 'POST'") || cmd.includes("href") || cmd.includes("open(") || cmd.includes("document.") || cmd.includes("getElementById('app')")) {
+      if (cmd.includes(":PUT") || cmd.includes(":POST") || cmd.includes("href") || cmd.includes("open(") || cmd.includes("document.") || cmd.includes("getElementById('app')")) {
         // filter detection, block immediately.
         genesis.genesis.lookupVariableByNameAndType('@GENESIS:return', '').value = 'Command detected as unsafe, '+genesis.filterText[Math.floor(Math.random() * genesis.filterText.length)];
       } else {
         genesis.genesis.lookupVariableByNameAndType('@GENESIS:return', '').value = genesis.eval(cmd)
-        genesis.genesis.lookupVariableByNameAndType('@GENESIS:oldOpcode', '').value = genesis.genesis.lookupVariableByNameAndType('@GENESIS:opcode', '').value;
+        genesis.genesis.lookupVariableByNameAndType('@GENESIS:old_opcode', '').value = genesis.genesis.lookupVariableByNameAndType('@GENESIS:opcode', '').value;
         genesis.oldOpcode = genesis.genesis.lookupVariableByNameAndType('@GENESIS:opcode', '').value;
       }
     };
