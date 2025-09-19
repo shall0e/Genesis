@@ -8,7 +8,7 @@ genesis.filterText = [
   "don't spread viruses, spread love!",
   "stealing information is wrong.",
   "contact the creator and ask them why they are trying to steal accounts.",
-  "don't abuse Genesis, we block webhooks and sending data."
+  "don't abuse Genesis, we block redirects and POST requests."
 ];
 
 genesis.getVariable = function(target,variable){
