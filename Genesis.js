@@ -1,7 +1,9 @@
 let genesis = {}
 
-genesis.scratch = document.getElementById('app')._reactRootContainer._internalRoot.current.child.pendingProps.store.getState()
-genesis.genesis = document.getElementById('app')._reactRootContainer._internalRoot.current.child.pendingProps.store.getState().scratchGui.vm.runtime.getSpriteTargetByName('Genesis')
+genesis.scratch = (a=>a=f=>f.pendingProps.store||a(f.return))()(
+  Object.entries(document.querySelector('[class*="stage-wrapper"]')).find(x=>/Fiber/.test(x))[1]
+).getState()
+genesis.genesis = genesis.scratch.scratchGui.vm.runtime.getSpriteTargetByName('Genesis')
 genesis.scratch.session.session.user.token = "tokenHidden";
 genesis.scratch.session.session.user.email = "email@email.com";
 genesis.filterText = [
